@@ -1,17 +1,14 @@
-import React from 'react';
+import '../App.css';
 
-export default function Header(props){
+function Header(props) {
     return (
-        <header className="row block center">
-            <div>
-                <a href="#/">
-                <h1>Small Shopping Cart</h1>
-                </a>
+        <div className='flex shopping-card'>
+            <div onClick={() => props.handleShow(false)} >Shopping Cart App</div>
+            <div onClick={() => props.handleShow(true)}> Cart
+                <sup> {props.count} </sup>
             </div>
-            <div>
-                <a href="#/cart">Cart</a>
-                <a href="#/signin">SignIn</a>
-            </div>
-        </header>
-    )
+        </div>
+    );
 }
+
+export default Header;
