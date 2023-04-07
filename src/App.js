@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import ProductList from './components/ProductList';
-import CartList from './components/CartList';
+import CartList from './components/CardList';
 import { useState } from 'react';
 
 function App() {
